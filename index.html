@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amey's Personal Website</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Eye-catchy gradient background */
+        body {
+            background: linear-gradient(
+                135deg,
+                #e0f2ff,
+                #f3e8ff,
+                #ffffff
+            );
+            min-height: 100vh;
+        }
+
+        /* Card Hover Effect */
+        .card {
+            background-color: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        /* Image hover */
+        #home img:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+
+        /* Skill badge hover */
+        .badge {
+            transition: transform 0.3s;
+        }
+
+        .badge:hover {
+            transform: scale(1.15);
+        }
+
+        /* Accent Button */
+        .btn-accent {
+            background-color: #6f42c1;
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            font-size: 1.1rem;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-accent:hover {
+            background-color: #5a32a3;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #212529;
+            color: white;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: white;
+            margin: 0 12px;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        footer a:hover {
+            color: #0d6efd;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#home">Amey's Website</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="margin-top:80px"></div>
+
+<div class="container py-5">
+
+    <!-- Home -->
+    <div id="home" class="card shadow-sm text-center p-4 mb-5">
+        <img src="profile.jpg" class="rounded-circle mx-auto mb-3" width="160" alt="My Photo">
+        <h2 class="fw-bold">Amey</h2>
+        <p class="text-muted mb-3">Student | Beginner Web Developer</p>
+
+        <!-- Accent Button -->
+        <a href="#education" class="btn btn-accent">
+            View My Education
+        </a>
+    </div>
+
+    <!-- About -->
+    <div id="about" class="card shadow-sm p-4 mb-5">
+        <h3 class="text-center mb-3">
+            <i class="bi bi-person-circle"></i> About Me
+        </h3>
+        <p class="text-center text-muted">
+            Hi! I'm Amey, a beginner web developer and an engineering student.
+            I am currently pursuing my <strong>Engineering degree</strong> from 
+            <strong>KBTCOE</strong> and I will be completing my degree in 
+            <strong>2027</strong>.
+            I enjoy learning new technologies and building clean, user-friendly websites.
+        </p>
+    </div>
+
+    <!-- Skills -->
+    <div id="skills" class="card shadow-sm p-4 mb-5">
+        <h3 class="text-center mb-3">
+            <i class="bi bi-lightning-fill"></i> Skills
+        </h3>
+        <div class="d-flex justify-content-center gap-2 flex-wrap">
+            <span class="badge bg-primary">HTML</span>
+            <span class="badge bg-success">CSS</span>
+            <span class="badge bg-warning text-dark">Bootstrap</span>
+            <span class="badge bg-info text-dark">JavaScript</span>
+        </div>
+    </div>
+
+    <!-- Education -->
+    <div id="education" class="card shadow-sm p-4 mb-5">
+        <h3 class="text-center mb-4">
+            <i class="bi bi-mortarboard-fill"></i> Educational Details
+        </h3>
+        <div class="table-responsive">
+            <table class="table table-hover align-middle">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Education</th>
+                        <th>Institution</th>
+                        <th>Status / Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10th</td>
+                        <td>RJEMHS</td>
+                        <td>85%</td>
+                    </tr>
+                    <tr>
+                        <td>12th</td>
+                        <td>RYK</td>
+                        <td>88%</td>
+                    </tr>
+                    <tr>
+                        <td>Engineering (Degree)</td>
+                        <td>KBTCOE</td>
+                        <td>Pursuing (2027)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="text-center">
+    <p>© 2026 Amey</p>
+    <div>
+        <a href="https://www.linkedin.com/in/ameyippar" target="_blank">
+            <i class="bi bi-linkedin"></i> LinkedIn
+        </a>
+        <a href="mailto:ameyippar@gmail.com">
+            <i class="bi bi-envelope-fill"></i> Email
+        </a>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
